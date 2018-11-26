@@ -24,6 +24,11 @@ public class DatabaseAdminTest {
         databaseAdmin.setName("Sonia Filihumpton");
         assertEquals("Sonia Filihumpton", databaseAdmin.getName());
     }
+    @Test
+    public void dbAdminCantUpdateNullName(){
+        databaseAdmin.setName(null);
+        assertEquals("Abby Cussed", databaseAdmin.getName());
+    }
 
     @Test
     public void dbAdminHasNINumber(){

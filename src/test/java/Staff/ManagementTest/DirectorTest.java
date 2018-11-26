@@ -21,6 +21,12 @@ public class DirectorTest {
     }
 
     @Test
+    public void directorCantEditNullName(){
+        director.setName(null);
+        assertEquals("Bossy McBossface", director.getName());
+    }
+
+    @Test
     public void directorCanEditName(){
         director.setName("Howard Scrumbledongle");
         assertEquals("Howard Scrumbledongle", director.getName());

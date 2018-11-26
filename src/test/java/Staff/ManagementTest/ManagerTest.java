@@ -25,6 +25,11 @@ public class ManagerTest {
         manager.setName("Ryan Thumplebarton");
         assertEquals("Ryan Thumplebarton", manager.getName());
     }
+    @Test
+    public void managerCantUpdateNullName(){
+        manager.setName(null);
+        assertEquals("Seagull Bighair", manager.getName());
+    }
 
     @Test
     public void managerHasNINumber(){

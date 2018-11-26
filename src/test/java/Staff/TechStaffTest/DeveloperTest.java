@@ -26,6 +26,12 @@ public class DeveloperTest {
     }
 
     @Test
+    public void developerCantUpdateNullName(){
+        developer.setName(null);
+        assertEquals("Square Pusher", developer.getName());
+    }
+
+    @Test
     public void developerHasNINumber(){
         assertEquals("IO230964N", developer.getNationalInsuranceNum());
     }
